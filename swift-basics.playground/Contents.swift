@@ -123,3 +123,15 @@ print("Average HRD equals to \(averageHRD!)")
  print("4 * (9 - 6) / 2 equals to 6")
  print("4 * (9 - 6) / 2 equals to \(4 * (9 - 6) / 2)")
  */
+
+// Lab 2.2 Task 1
+print("true", 9 == 9)
+print("false", 9 != 9)
+print("false", 47 > 90)
+print("true", 47 < 90)
+print("true", 4 <= 4)
+print("false", 4 >= 5)
+print("false", (47 > 90) && (47 < 90))
+print("true", (47 > 90) || (47 < 90))
+print("false", !true)
+
