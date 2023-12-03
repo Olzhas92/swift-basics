@@ -180,3 +180,77 @@ if isNiceWeather {
     print("Staying home")
 }
 */
+
+// Lab 3 Task 1
+/*var name = "Olzhas"
+print("My name is \(name).")
+let favoriteQuote = "Hello World!"
+print(favoriteQuote)
+let emptyString = ""
+if emptyString.count == 0 {
+    print("String is empty")
+} else {
+    print("Not empty")
+}
+*/
+
+// Lab 3 Task 2
+/*let city: String = "Kokshetau"
+let region: String = "Aqmola"
+let home: String = city + ", " + region
+print(home)
+var introduction = "I live in "
+print(introduction + home)
+let name: String = "Olzhas"
+let age: Int = 31
+print("My name is \(name). Next year I'll be \(age + 1).")
+*/
+
+// Lab 3 Task 3
+/*let name = "Olzhas"
+let surname = "Khamzin"
+let fullName = name + " " + surname
+print(fullName)
+var previousBest = 3467
+var newBest = 9999
+let congratulations = "Congratulations, \(fullName). You've broken your previous best result of \(previousBest) steps by making \(newBest) steps yesterday."
+print(congratulations)
+*/
+
+// Lab 3 Task 4.1
+/*let nameInCaps: String = "OLZHAS"
+let name: String = "olzhas"
+
+if nameInCaps == name {
+    print("These 2 strings are the same")
+} else {
+    print("These 2 string are not the same")
+}
+
+if nameInCaps.lowercased() == name.lowercased() {
+    print("\(nameInCaps) and \(name) do coincide.")
+} else {
+    print("\(nameInCaps) and \(name) do not coincide.")
+}
+*/
+
+// Lab 3 Task 4.2
+/*let father = "Olzhas Khamzin"
+let son = "Olzhas Khamzin JR"
+if son.contains("JR") {
+    print("This name has been used 2 generations.")
+}
+*/
+
+// Lab 3 Task 4.3
+/*let textToSearchThrough = "To be or not to be, that is the question"
+let textToSearchFor = "To be or not to be"
+if textToSearchThrough.lowercased().contains(textToSearchFor) {
+    print("I found!")
+}
+*/
+
+// Lab 3 Task 4.4
+/*let name = "Olzhas"
+print(name.count)
+*/
