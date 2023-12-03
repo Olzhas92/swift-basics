@@ -40,3 +40,17 @@ print("My name is \(name!).")
 var distanceTravelled: Double = 0
 distanceTravelled = 54.3
 print("Total distance travelled equals to \(distanceTravelled).")
+
+
+// Lab 2.1 Task 1
+let width = 10
+let height = 20
+let area: Int?
+area = width * height
+print("The total area equals to \(area!).")
+let roomArea: Int?
+roomArea = area! / 2
+print("The room area equals to \(roomArea!).")
+let perimeter: Int?
+perimeter = width + width + height + height
+print("The perimeter equals to \(perimeter!).")
