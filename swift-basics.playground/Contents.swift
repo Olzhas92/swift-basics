@@ -125,7 +125,7 @@ print("Average HRD equals to \(averageHRD!)")
  */
 
 // Lab 2.2 Task 1
-print("true", 9 == 9)
+/*print("true", 9 == 9)
 print("false", 9 != 9)
 print("false", 47 > 90)
 print("true", 47 < 90)
@@ -134,4 +134,49 @@ print("false", 4 >= 5)
 print("false", (47 > 90) && (47 < 90))
 print("true", (47 > 90) || (47 < 90))
 print("false", !true)
+*/
 
+// Lab 2.2 Task 2
+/*var tenge = 0
+if tenge == 0 {
+    print("You're broke 😅")
+}
+
+tenge = 300
+if tenge == 0 {
+    print("You're broke 😅")
+} else {
+    print("You've got deep pockets 💵")
+}
+
+tenge = 2000
+if tenge == 0 {
+    print("You're broke 😅")
+}
+else if tenge < 400 {
+    print("You've got deep pockets 💵")
+} else {
+    print("You can Uber home tonight")
+}
+*/
+
+// Lab 2.2 Task 3
+/*let hasFish = true
+let hasPizza = true
+let hasVegan = false
+
+if hasFish || hasPizza {
+    print("Let's get going!")
+} else {
+    print("Sorry, we need to pick a different place :(")
+}
+*/
+
+// Lab 2.3 Task 4
+/*let isNiceWeather = true
+if isNiceWeather {
+    print("I'm going for a walk")
+} else {
+    print("Staying home")
+}
+*/
