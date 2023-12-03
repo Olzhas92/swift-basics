@@ -54,3 +54,29 @@ print("The room area equals to \(roomArea!).")
 let perimeter: Int?
 perimeter = width + width + height + height
 print("The perimeter equals to \(perimeter!).")
+
+// Lab 2.1 Task 2
+let dozen: Int = 12
+var remainingValue: Int?
+remainingValue = dozen % 5
+print("12 % 5 equals to \(remainingValue!)")
+
+// Lab 2.1 Task 3
+let heartRate1 = 60
+let heartRate2 = 80
+let heartRate3 = 99
+let addedHR: Int?
+let averageHR: Int?
+addedHR = heartRate1 + heartRate2 + heartRate3
+print("Added HR equals to \(addedHR!)")
+averageHR = addedHR! / 3
+print("Average HR equals to \(averageHR!)")
+let heartRate1D: Double = Double(heartRate1)
+let heartRate2D: Double = Double(heartRate2)
+let heartRate3D: Double = Double(heartRate3)
+let addedHRD: Double?
+let averageHRD: Double?
+addedHRD = heartRate1D + heartRate2D + heartRate3D
+print("Added HRD equals to \(addedHRD!)")
+averageHRD = addedHRD! / 3
+print("Average HRD equals to \(averageHRD!)")
