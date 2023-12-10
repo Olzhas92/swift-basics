@@ -254,3 +254,106 @@ if textToSearchThrough.lowercased().contains(textToSearchFor) {
 /*let name = "Olzhas"
 print(name.count)
 */
+
+
+// Lab 4 Task 1
+/*func introduceMyself() {
+    print("Hello, my name is Olzhas")
+}
+introduceMyself()
+*/
+
+// Lab 4 Task 2.1
+/*var steps: Int = 10
+
+func incrementSteps() {
+    steps += 1
+    print(steps)
+}
+
+incrementSteps()
+incrementSteps()
+incrementSteps()
+incrementSteps()
+incrementSteps()
+*/
+
+// Lab 4 Task 2.2
+/*let goal = 10000
+var steps = 1000
+func progressUpdate() {
+    if steps < (10 / goal) * 100 {
+        print("You have a good start")
+    }
+    else if steps < goal / 2 {
+        print("You are almost halfway")
+    }
+    else if steps < (90 / goal) * 100 {
+        print("You are halfway")
+    }
+    else if steps < goal {
+        print("You've almost made it")
+    }
+    else {
+        print("You've achieved your goal!")
+    }
+}
+progressUpdate()
+*/
+
+// Lab 4 Task 3
+/*func introduction(to name: String, from home: String, years age: Int) {
+    print("\(name). \(age) years old. City of \(home)")
+}
+introduction(to: "Olzhas", from: "Kokshetau", years: 31)
+*/
+
+// Lab 4 Task 4.1
+/*func progressUpdate(current steps: Int, planned goal: Int) {
+    if steps < (10 / goal) * 100 {
+        print("You have a good start")
+    }
+    else if steps < goal / 2 {
+        print("You are almost halfway")
+    }
+    else if steps < (90 / goal) * 100 {
+        print("You are halfway")
+    }
+    else if steps < goal {
+        print("You've almost made it")
+    }
+    else {
+        print("You've achieved your goal!")
+    }
+}
+progressUpdate(current: 5000, planned: 10000)
+*/
+
+// Lab 4 Task 4.2
+/*func pacing(current currentDistance: Double, total totalDistance: Double, _ currentTime: Double, _ goalTime: Double) {
+    var pace = currentTime / (currentDistance / totalDistance)
+    if pace > goalTime {
+        print("Good job")
+    } else {
+        print("Try harder")
+    }
+}
+
+pacing(current: 10.5, total: 42, 70, 60)
+*/
+
+// Lab 4 Task 5.1
+/*func greeting(of name: String) -> String {
+    return "Hi, \(name). How is it going?"
+}
+var res = greeting(of: "Olzhas")
+print(res)
+*/
+
+// Lab 4 Task 5.2
+/*func multiplyNumbers(left num1: Int, right num2: Int) -> Int {
+    return num1 * num2 + 2
+}
+var res = multiplyNumbers(left: 5, right: 7)
+print(res)
+*/
