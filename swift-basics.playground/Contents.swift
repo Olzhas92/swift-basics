@@ -357,3 +357,76 @@ print(res)
 var res = multiplyNumbers(left: 5, right: 7)
 print(res)
 */
+
+// Lab 5 Task 1
+/*var registrationList: [String] = []
+registrationList.append("Sara")
+print(registrationList)
+registrationList += ["Olzhas", "Zhanelya", "Zhanna", "Alika"]
+print(registrationList)
+
+registrationList.insert("Almas", at: 1)
+print(registrationList)
+registrationList[5] = "Alua"
+print(registrationList)
+let deletedItem = registrationList.removeLast()
+print(deletedItem)
+*/
+
+// Lab 5 Task 2
+/*var running: [String] = ["Jogging", "Fast run"]
+var walking: [String] = ["Scandinavian walk", "Ordinary walk"]
+var challenges = [running] + [walking]
+print(challenges[1][0])
+challenges.removeAll()
+var newList: [String] = []
+if newList.isEmpty {
+    print("Start doing a new exercise")
+}
+else if newList.count == 1 {
+    print("You've pick Exercise \(newList[0])")
+} else {
+    print("You've picked several exercises")
+}
+*/
+
+// Lab 5 Task 3
+/*var months: [String: Int] = ["January": 31, "February": 28, "March": 31]
+print(months)
+months["April"] = 30
+print(months)
+months.updateValue(29, forKey: "February")
+print(months)
+if let daysInJanuary = months["January"] {
+    print("January has \(months["January"]!) days.")
+}
+print(months["January"]!)
+*/
+
+// Lab 5 Task 4
+/*let shapesArray = ["Circle", "Square", "Triangle"]
+let colorsArray = ["Red", "Green", "Blue"]
+let combinedDictionary: [String: String] = [shapesArray[0]: colorsArray[0], shapesArray[1]: colorsArray[1], shapesArray[2]: colorsArray[2]]
+print(combinedDictionary)
+if let lastOfColors = combinedDictionary["Triangle"] {
+    print(lastOfColors)
+} else {
+    print("There is nothing")
+}
+*/
+
+// Lab 5 Task 5
+/*var steps: [String: Double] = ["Easy": 10.0, "Medium": 8.0, "Fast": 6.0]
+print(steps)
+steps["Sprint"] = 4.0
+print(steps)
+steps.updateValue(7.5, forKey: "Medium")
+steps.updateValue(5.8, forKey: "Fast")
+print(steps)
+steps.removeValue(forKey: "Sprint")
+print(steps)
+
+if steps["Medium"] != nil {
+    print("Good. I'll keep your pace of \(steps["Medium"]!) minutes per mile")
+}
+*/
