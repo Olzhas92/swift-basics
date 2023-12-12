@@ -459,7 +459,85 @@ for exercise in exercises {
 }
 
 let exercisesAndData: [String: Double] = ["Running": 150.0, "Cycling": 100.5, "Swimming": 130.2]
-for (exercise, pulse) in exercisesAndData {
-    print("\(exercise): \(pulse)")
+for (exercise, heartRate) in exercisesAndData {
+    print("\(exercise): \(heartRate)")
 }
+*/
+
+
+// Lab 6 Task 3
+/*var dice: Int
+
+repeat {
+    dice = Int.random(in: 1...6)
+    print(dice)
+} while dice != 1
+*/
+
+// Lab 6 Task 4
+/*let cadence: Double = 10.0
+var testSteps: Int = 100
+
+var phrase: String = "Take a step"
+var counter = 0
+repeat {
+    print(phrase)
+    counter += 1
+    Thread.sleep(forTimeInterval: 60/cadence)
+}
+while counter < 10
+*/
+
+// Lab 6 Task 5
+/*let citiesAndCodes: [String: String] = ["Almaty": "ALA", "Astana": "NQZ", "Kokshetau": "KOV", "Atyrau": "GUW"]
+var counter = citiesAndCodes.count
+repeat {
+    for (city, code) in citiesAndCodes {
+        print("\(city): \(code)")
+        if(code == "KOV") {
+            print("I've found my hometown")
+        }
+    }
+    counter -= 1
+} while counter > 0
+*/
+
+// Lab 6 Task 6
+/*let movementHeartRates: [String: Double] = ["Running": 150.0, "Cycling": 100.5, "Swimming": 130.2]
+var lowHR: Double = 115.5
+var highHR: Double = 160.1
+
+for heartRate in movementHeartRates.values {
+    repeat {
+        if heartRate < lowHR || heartRate > highHR {
+            print(heartRate)
+        } else {
+            print("You could have made an exercise")
+        }
+    } while false
+}
+*/
+
+// Lab 6 Task 7
+/*let text = "Столица Казахстана - Астана"
+var counter: Int = 0
+
+for letter in text {
+    if letter == "а" {
+        counter += 1
+    }
+}
+print("Number of 'a' is \(counter)")
+*/
+
+// Lab 6 Task 8
+/*let array: [Int] = [0, 1, 2, 3, 4, 1, 5, 6, 2, 1]
+var counter: Int = 0
+for item in array {
+    if item == 1 {
+        counter += 1
+    }
+}
+
+print("Number of '1' is \(counter)")
 */
