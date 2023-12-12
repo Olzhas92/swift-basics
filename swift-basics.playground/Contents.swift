@@ -430,3 +430,36 @@ if steps["Medium"] != nil {
     print("Good. I'll keep your pace of \(steps["Medium"]!) minutes per mile")
 }
 */
+
+
+// Lab 6 Task 1.1
+/*for i in 0..<100 {
+    print(i)
+}
+*/
+
+// Lab 6 Task 1.2
+/*let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+for i in alphabet {
+    print(i)
+}
+*/
+
+// Lab 6 Task 1.3
+/*let countriesAndCapitals: [String: String] = ["Kazakhstan": "Astana", "Italy": "Rome", "UK": "London", "Spain": "Madrid"]
+for (country, capital) in countriesAndCapitals {
+    print("Capital of \(country) is \(capital)")
+}
+*/
+
+// Lab 6 Task 2
+/*let exercises = ["Running", "Cycling", "Swimming"]
+for exercise in exercises {
+    print(exercise)
+}
+
+let exercisesAndData: [String: Double] = ["Running": 150.0, "Cycling": 100.5, "Swimming": 130.2]
+for (exercise, pulse) in exercisesAndData {
+    print("\(exercise): \(pulse)")
+}
+*/
