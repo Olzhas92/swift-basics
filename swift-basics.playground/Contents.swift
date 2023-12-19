@@ -910,8 +910,8 @@ User.logIn(user: user)
 */
 
 
-// Lab 8 Task 1
-/*class Spaceship {
+// Lab 8 Task 1, Task 2, Task 3, Task 4
+class Spaceship {
     var name: String
     var health: Int
     var position: Int
@@ -955,4 +955,77 @@ print(falcon.position)
 falcon.wasHit()
 falcon.wasHit()
 falcon.wasHit()
-*/
+
+class Fighter: Spaceship {
+    var weapon: String
+    var remainingFirePower: Int
+    
+    init(weapon: String = "", remainingFirePower: Int = 5, name: String = "", health: Int = 9, position: Int = 0) {
+        self.weapon = weapon
+        self.remainingFirePower = remainingFirePower
+        
+        super.init(name: name, health: health, position: position)
+    }
+    
+    override func printInfo() {
+        super.printInfo()
+        print(weapon, remainingFirePower)
+    }
+    
+    func fire() {
+        guard self.remainingFirePower > 0 else {
+            print("You no longer have any fire power.")
+            return
+        }
+        self.remainingFirePower -= 1
+    }
+}
+
+var fighter = Fighter(weapon: "Laser", remainingFirePower: 10, name: "Destroyer", health: 9, position: 0)
+fighter.printInfo()
+print(fighter.position)
+fighter.moveRight()
+print(fighter.position)
+// Spaceship is a superclass to Fighter which is a subclass.
+// Superclass can't have access to properties and methods of subclass.
+// While the latter can have access superclass.
+fighter.fire()
+fighter.fire()
+fighter.fire()
+fighter.fire()
+fighter.fire()
+fighter.fire()
+fighter.fire()
+fighter.fire()
+fighter.fire()
+fighter.fire()
+fighter.fire()
+
+class ShieldedShip: Fighter {
+    var shieldStrength: Int
+    
+    init(shieldStrength: Int = 25, weapon: String = "", remainingFirePower: Int = 5, name: String = "", health: Int = 9, position: Int = 0) {
+        self.shieldStrength = shieldStrength
+        
+        super.init(weapon: "", remainingFirePower: 7, name: "", health: 9, position: 0)
+    }
+    
+    override func printInfo() {
+        super.printInfo()
+        print(shieldStrength)
+    }
+    
+    override func wasHit(by hit: Int? = 5) {
+        guard self.shieldStrength > 0 else {
+            self.health -= 5
+            return
+        }
+        self.shieldStrength -= 5
+    }
+}
+var defender = ShieldedShip(weapon: "Cannon", name: "Defender")
+defender.printInfo()
+defender.wasHit()
+print(defender.shieldStrength, defender.health)
+defender.wasHit()
+print(defender.shieldStrength, defender.health)
