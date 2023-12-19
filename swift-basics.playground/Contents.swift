@@ -955,6 +955,7 @@ print(falcon.position)
 falcon.wasHit()
 falcon.wasHit()
 falcon.wasHit()
+print(falcon.position)
 
 class Fighter: Spaceship {
     var weapon: String
