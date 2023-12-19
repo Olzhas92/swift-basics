@@ -908,3 +908,51 @@ user.printInfo()
 User.currentUser?.printInfo()
 User.logIn(user: user)
 */
+
+
+// Lab 8 Task 1
+/*class Spaceship {
+    var name: String
+    var health: Int
+    var position: Int
+    
+    init(name: String = "", health: Int = 0, position: Int = 0) {
+        self.name = name
+        self.health = health
+        self.position = position
+    }
+    
+    func printInfo() {
+        print(name, health, position)
+    }
+    
+    func moveLeft() {
+        self.position -= 1
+    }
+    
+    func moveRight() {
+        self.position += 1
+    }
+    
+    func wasHit(by hit: Int? = 5) {
+        guard self.health <= 0 else {
+            self.health -= hit!
+            print(self.health)
+            return
+        }
+        print("You've been destroyed. Play another game?")
+        
+    }
+}
+
+let falcon = Spaceship(name: "Arryn", health: 9, position: 9)
+falcon.name = "Falcon"
+falcon.printInfo()
+falcon.moveLeft()
+falcon.moveLeft()
+falcon.moveRight()
+print(falcon.position)
+falcon.wasHit()
+falcon.wasHit()
+falcon.wasHit()
+*/
