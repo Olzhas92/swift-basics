@@ -626,18 +626,285 @@ let someWhere = GPS(latitude: 51.514004, longitude: 0.125226)
 someWhere.getInfo()
 */
 
-// Lab 7 Task 5
+// Lab 7 Task 5, Task 10
 /*struct Book {
     var title: String
     var author: String
     var pages: Int
     var price: Double
     
-    func getInfo() {
+    func description() {
         print(title, author, pages, price)
     }
 }
 
 var favouriteBook = Book(title: "Altyn Orda", author: "Iliyas Yessenberlin", pages: 999, price: 999999)
-favouriteBook.getInfo()
+favouriteBook.description()
+*/
+
+// Lab 7 Task 6
+/*struct Laptop {
+    var screenSize: Int = 13
+    var repairCount: Int = 0
+    var yearPurchased: Int
+}
+
+var macBook = Laptop(yearPurchased: 2023)
+var spectre = Laptop(yearPurchased: 2023)
+*/
+
+// Lab 7 Task 7
+/*struct Height {
+    var heightInInches: Double
+    var heightInCentimeters: Double
+    
+    init(heightInInches: Double) {
+        self.heightInInches = heightInInches
+        self.heightInCentimeters = heightInInches * 2.54
+    }
+    
+    init(heightInCentimeters: Double) {
+        self.heightInInches = heightInCentimeters / 2.54
+        self.heightInCentimeters = heightInCentimeters
+    }
+    
+    func getInfo() {
+        print(Int(heightInInches), Int(heightInCentimeters))
+    }
+    
+}
+
+var someonesHeight = Height(heightInInches: 65)
+someonesHeight.getInfo()
+var myHeight = Height(heightInCentimeters: 15)
+myHeight.getInfo()
+*/
+
+// Lab 7 Task 8
+/*struct User {
+    var name: String
+    var age, activityLevel: Int
+    var weight, height: Double
+    
+    func prinInfo() {
+        print(name, age, activityLevel, weight, height)
+    }
+}
+
+var user = User(name: "Olzhas", age: 31, activityLevel: 9, weight: 78.0, height: 182.0)
+user.prinInfo()
+*/
+
+// Lab 7 Task 9
+/*struct Distance {
+    var meters: Double
+    var feet: Double
+    
+    init(meters: Double) {
+        self.meters = meters
+        self.feet = meters * 3.28084
+    }
+    
+    init(feet: Double) {
+        self.feet = feet
+        self.meters = feet / 3.28084
+    }
+    
+    func printInfo() {
+        print(meters, feet)
+    }
+}
+
+var mile = Distance(meters: 1600)
+mile.printInfo()
+var meter = Distance(feet: 5280)
+meter.printInfo()
+*/
+
+// Lab 7 Task 11
+/*struct Post {
+    var message: String
+    var likes: Int
+    var numberOfComments: Int
+    
+    func printInfo() {
+        print(message, likes, numberOfComments)
+    }
+    
+    mutating func increaseLikes(by value: Int) {
+        self.likes += value
+    }
+}
+
+var post = Post(message: "Hello World", likes: 999, numberOfComments: 99999)
+post.printInfo()
+post.increaseLikes(by: 7)
+post.printInfo()
+*/
+
+// Lab 7 Task 12
+/*struct RunningWorkout {
+    var distance: Double
+    var time: Double
+    var elevation: Double
+    
+    func postWorkoutStats() {
+        print(distance, time, elevation)
+    }
+}
+
+var runningWorkout = RunningWorkout(distance: 10, time: 35, elevation: 99)
+runningWorkout.postWorkoutStats()
+*/
+
+// Lab 7 Task 13
+/*struct Steps {
+    var steps: Int
+    var goal: Int
+    
+    func printInfo() {
+        print(steps, goal)
+    }
+    
+    mutating func makeStep() {
+        self.steps += 1
+    }
+}
+
+var steps = Steps(steps: 5555, goal: 10000)
+steps.printInfo()
+steps.makeStep()
+steps.printInfo()
+*/
+
+// Lab 7 Task 14
+/*struct Rectangle {
+    var width, height: Double
+    
+    var area: Double {
+        get { width * height }
+        set { width * height }
+    }
+    
+    func printInfo() {
+        print(width, height, area)
+    }
+}
+
+var rectangle = Rectangle(width: 15, height: 7.5)
+rectangle.printInfo()
+*/
+
+// Lab 7 Task 15
+/*struct Height {
+    var heightInInches: Double = 0 {
+        didSet {
+            if oldValue > 0 {
+                self.heightInInches = oldValue / 2.54
+            }
+        }
+    }
+    
+    var heightInCentimeters: Double = 0 {
+        didSet {
+            if oldValue > 0 {
+                self.heightInCentimeters = oldValue * 2.54
+            }
+        }
+    }
+    
+    init(heightInInches: Double) {
+        self.heightInInches = heightInInches
+        self.heightInCentimeters = heightInInches * 2.54
+    }
+    
+    init(heightInCentimeters: Double) {
+        self.heightInCentimeters = heightInCentimeters
+        self.heightInInches = heightInCentimeters / 2.54
+    }
+    
+    func printInfo() {
+        print(heightInInches, heightInCentimeters)
+    }
+}
+
+var heightOne = Height(heightInInches: 15)
+heightOne.printInfo()
+var heightTwo = Height(heightInCentimeters: 15)
+heightTwo.printInfo()
+*/
+
+// Lab 7 Task 16
+/*struct RunningWorkout {
+    var distance: Double
+    var time: Double
+    var elevation: Double
+    
+    var averageMileTime: Double {
+        get { (distance / 1600) / time }
+    }
+    
+    func printInfo() {
+        print(distance, time, elevation, averageMileTime)
+    }
+}
+
+var runningWorkout = RunningWorkout(distance: 10000.0, time: 0.5, elevation: 99)
+runningWorkout.printInfo()
+
+struct Steps {
+    var steps: Int = 0 {
+        willSet {
+            if newValue == self.goal {
+                print("Congrats")
+            }
+        }
+        
+        didSet {
+            if oldValue == self.goal {
+                print("Congrats")
+            }
+        }
+    }
+    
+    var goal: Int
+    
+    init(steps: Int, goal: Int) {
+        self.steps = steps
+        self.goal = goal
+    }
+    
+    mutating func takeStep() {
+        steps += 1
+    }
+    
+    func printInfo() {
+        print(steps, goal)
+    }
+}
+
+var steps = Steps(steps: 9999, goal: 10000)
+steps.printInfo()
+*/
+
+// Lab 7 Task 17
+/*struct User {
+    var userName: String
+    var email: String
+    var age: Int
+    static var currentUser: User?
+    
+    func printInfo() {
+        print(userName, email, age)
+    }
+    
+    static func logIn(user: User) {
+        print("\(currentUser?.userName ?? "Zhanelya") have successfully logged in.")
+    }
+}
+
+var user = User(userName: "Olzhas92", email: "olzhas@me.com", age: 31)
+user.printInfo()
+User.currentUser?.printInfo()
+User.logIn(user: user)
 */
