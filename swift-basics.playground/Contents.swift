@@ -541,3 +541,103 @@ for item in array {
 
 print("Number of '1' is \(counter)")
 */
+
+// Lab 7 Task 1
+/*struct GPS {
+    var latitude: Double = 0.0
+    var longitude: Double = 0.0
+    
+    func getInfo() {
+        print(latitude, longitude)
+    }
+    
+    mutating func changeInfo(latitude: Double, longitude: Double) {
+        self.latitude = latitude
+        self.longitude = longitude
+    }
+}
+
+var somePlace = GPS()
+somePlace.getInfo()
+somePlace.changeInfo(latitude: 51.514004, longitude: 0.125226)
+somePlace.getInfo()
+*/
+
+// Lab 7 Task 2
+/*struct Book {
+    var title: String = ""
+    var author: String = ""
+    var pages: Int = 0
+    var price: Double = 0
+    
+    func getInfo() {
+        print(title, author, pages, price)
+    }
+    
+    mutating func changeInfo(title: String, author: String, pages: Int, price: Double) {
+        self.title = title
+        self.author = author
+        self.pages = pages
+        self.price = price
+    }
+}
+
+var favouriteBook = Book()
+favouriteBook.getInfo()
+favouriteBook.changeInfo(title: "Altyn Orda", author: "Iliyas Yessenberlin", pages: 999, price: 999999)
+favouriteBook.getInfo()
+*/
+
+// Lab 7 Task 3
+/*struct RunningWorkout {
+    var distance: Int = 0
+    var time: Double = 0.0
+    var elevation: Int = 0
+    
+    func getInfo() {
+        print(distance, time, elevation)
+    }
+    
+    mutating func changeInfo(distance: Int, time: Double, elevation: Int) {
+        self.distance = distance
+        self.time = time
+        self.elevation = elevation
+    }
+}
+
+var firstRun = RunningWorkout()
+firstRun.getInfo()
+firstRun.changeInfo(distance: 2396, time: 15.3, elevation: 94)
+firstRun.getInfo()
+*/
+
+// Task 7 Lab 4
+/*struct GPS {
+    var latitude: Double
+    var longitude: Double
+    
+    func getInfo() {
+        print(latitude, longitude)
+    }
+
+}
+
+let someWhere = GPS(latitude: 51.514004, longitude: 0.125226)
+someWhere.getInfo()
+*/
+
+// Lab 7 Task 5
+/*struct Book {
+    var title: String
+    var author: String
+    var pages: Int
+    var price: Double
+    
+    func getInfo() {
+        print(title, author, pages, price)
+    }
+}
+
+var favouriteBook = Book(title: "Altyn Orda", author: "Iliyas Yessenberlin", pages: 999, price: 999999)
+favouriteBook.getInfo()
+*/
